@@ -427,6 +427,7 @@ article {
 .team-image-container {
   height: 380px;
   width: 50%;
+  z-index: -2;
 }
 
 #team-image {
