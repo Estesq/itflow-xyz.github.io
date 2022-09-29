@@ -765,6 +765,10 @@ footer {
   background-color: rgba(166, 162, 198, 255);
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .footer_logo img {
   height: 75px;
