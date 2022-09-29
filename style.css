@@ -641,6 +641,9 @@ article {
   display: block;
 }
 
+.container_info_info a {
+  text-decoration: none;
+}
 
 .container_info_info img {
   height: 150px;
