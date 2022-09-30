@@ -477,6 +477,53 @@ article {
   max-width: 80%;
 }
 
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 5))}
+}
+
+.slider {
+	height: 100px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 70%;
+}
+
+	.slider::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	.slider::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll 10s linear infinite;
+		display: flex;
+		width: calc(250px * 10);
+	}
+	
+	.slide {
+		height: 200px;
+		width: 250px;
+    margin-top: 10px;
+	}
+
+  .slide a {
+    text-decoration: none;
+    color: #a8a4c7;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  
 /* SCROLL NAME */
 .slider {
   margin: auto;
